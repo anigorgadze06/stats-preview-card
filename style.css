@@ -112,6 +112,7 @@ body{
     }
     .textdiv{
         padding: 20px;
+        margin-left: 10px;
     }
     .numstats{
         font-size: 17px;
