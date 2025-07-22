@@ -110,17 +110,20 @@ body{
         height: auto;
         border-bottom-right-radius: 0;
     }
+    .textdiv{
+        padding: 20px;
+    }
     .numstats{
         font-size: 17px;
         gap: 36px;
         margin-top: 14px;
-        margin-left: 20px;
+        margin-left: 0;
     }
     .stats{
         font-size: 10px;
         gap: 12px;
         margin-bottom: 20px;
-        margin-left: 20px;
+        margin-left: 0;
     }
     .stats span{
         margin-left: -2px;
@@ -129,13 +132,13 @@ body{
         font-size: 25px;
         margin-top: -80px;
         margin-bottom: 6px;
-        margin-left: 20px;
+        margin-left: 0;
     }
     .details{
         width: 100%;
-        margin-left: 20px;
         font-size: 18px;
         margin-top: -2px;
+        margin-left: 0;
     }
     .divforpic{
         width: 100%;
