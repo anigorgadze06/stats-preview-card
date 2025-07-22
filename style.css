@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    overflow-x: hidden;
+}
+.invisiblecont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.coloredcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 100px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: hsl(244, 37%, 16%);
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    font-family: interbold;
+    font-size: 35px;
+    width: 360px;
+    margin-left: 75px;
+}
+.title span{
+    color: hsl(277, 64%, 61%);
+}
+.details{
+    font-family: interlight;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 19px;
+    font-size: 15px;
+    width: 360px;
+    margin-left: 75px;
+}
+.numstats{
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+    color: hsl(0, 0%, 100%);
+    font-family: interbold;
+    margin-top: 60px;
+    margin-left: 75px;
+    font-size: 25px;
+}
+.numstats span{
+    margin-left: -4px;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+    font-family: interlight;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    font-family: interlight;
+    margin-left: 75px;
+}
+.stats span{
+    margin-left: -7px;
+}
+.divforpic{
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pic{
+    height: 400px;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.purpleoverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(277, 64%, 61%,0.4);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@font-face {
+    font-family: interbold;
+    src: url(fonts/Inter_18pt-Bold.ttf);
+}
+@font-face {
+    font-family: interlight;
+    src: url(fonts/Inter_18pt-Light.ttf);
+}
+@media(max-width:700px){
+    .coloredcont{
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+        margin-left: 0;
+        overflow-x: hidden;
+        flex-direction: column-reverse;
+    }
+    .pic{
+        width: 100%;
+        height: auto;
+        border-bottom-right-radius: 0;
+    }
+    .numstats{
+        font-size: 17px;
+        gap: 36px;
+        margin-top: 14px;
+        margin-left: 20px;
+    }
+    .stats{
+        font-size: 10px;
+        gap: 12px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .stats span{
+        margin-left: -2px;
+    }
+    .title{
+        font-size: 25px;
+        margin-top: -80px;
+        margin-bottom: 6px;
+        margin-left: 20px;
+    }
+    .details{
+        width: 90%;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-top: -2px;
+    }
+    .divforpic{
+        width: 100%;
+    }
+}
