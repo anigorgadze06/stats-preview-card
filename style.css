@@ -100,8 +100,6 @@ body{
     .coloredcont{
         height: auto;
         width: 90%;
-        flex-direction: column;
-        margin-left: 0;
         overflow-x: hidden;
         flex-direction: column-reverse;
     }
@@ -112,19 +110,17 @@ body{
     }
     .textdiv{
         padding: 20px;
-        margin-left: 10px;
+        margin-left: 0;
     }
     .numstats{
         font-size: 17px;
         gap: 36px;
         margin-top: 14px;
-        margin-left: 0;
     }
     .stats{
         font-size: 10px;
         gap: 12px;
         margin-bottom: 20px;
-        margin-left: 0;
     }
     .stats span{
         margin-left: -2px;
@@ -133,13 +129,15 @@ body{
         font-size: 25px;
         margin-top: -80px;
         margin-bottom: 6px;
-        margin-left: 0;
     }
     .details{
         width: 100%;
         font-size: 18px;
         margin-top: -2px;
+    }
+    .title, .details, .numstats, .stats{
         margin-left: 0;
+        width: 100%;
     }
     .divforpic{
         width: 100%;
